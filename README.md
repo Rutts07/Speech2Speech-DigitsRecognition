@@ -24,9 +24,5 @@ This repository contains the code for a speech to speech translation system crea
     - Google API was used to convert the text to speech.
 
 #### Performance :
-- ASR (Model : CTC-GRU-CNN) (Metric : CER) :
-    - The model was able to achieve a CER of 0.04 on the test set.
-
-- MT (Model : Seq2Seq-Attention) (Metric : BLEU) :
-    - The model was able to achieve a BLEU score of 0.82 on the test set.
-    
+- ASR (Model : CTC-GRU-CNN) (Metric : CER) : 0.04 on test set
+- MT (Model : Seq2Seq-Attention) (Metric : BLEU) : 0.82 on test set
