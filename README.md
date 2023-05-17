@@ -8,8 +8,8 @@ This repository contains the code for a speech to speech translation system crea
 #### Pipeline : 
 - Automatic Speech Recognition (ASR) :
     - A Connectionist Temporal Classification (CTC) based ASR.
-    - Based on a Recurrent Neural Network (RNN) on top of a Convolutional Neural Network (CNN) which is used obtain features from the raw audio signal.
-    - The RNN is a Bidirectional Gate Recurrent Unit (GRU) while the CNN is a 1D Convolutional Neural Network with max pooling and batch normalization.
+    - Based on a Recurrent Neural Network (RNN) on top of a Convolutional Neural Network (CNN) which is used obtain features from the raw mfccs of the audio signal.
+    - The RNN is a bi-directional Gated Recurrent Unit (GRU) while the CNN is a 1D Convolutional Neural Network with max pooling and batch normalization.
     - The CTC loss was used to train the model.
     - The model was trained for 100 epochs with a batch size of 64.
 
@@ -21,8 +21,8 @@ This repository contains the code for a speech to speech translation system crea
     - The model was trained for 300 epochs with a batch size of 512.
 
 - Text to Speech (TTS) :
-    - Google API was used to convert the text to speech.
+    - Google TTS API was used to convert the text to Tamil speech.
 
 #### Performance :
-- ASR (Model : CTC-GRU-CNN) (Metric : CER) : 0.04 on test set
-- MT (Model : Seq2Seq-Attention) (Metric : BLEU) : 0.82 on test set
+- ASR (Model : CTC-GRU-CNN) (Metric : CER)        : 0.04 on test set
+- MT  (Model : Seq2Seq-Attention) (Metric : BLEU) : 0.82 on test set
